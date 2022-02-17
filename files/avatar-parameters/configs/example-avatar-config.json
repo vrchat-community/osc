@@ -1,0 +1,136 @@
+{
+	"id" : "avtr_9d58037b-23c7-4c9c-adbd-b1338178cd81",
+	"name" : "PurpleMomo",
+	"parameters" : [
+		{
+			"name" : "Face",
+			"input" : {
+				"address" : "/avatar/parameters/Face",
+				"type" : "Int"
+			},
+			"output" : {
+				"address" : "/avatar/parameters/Face",
+				"type" : "Int"
+			}
+		},
+		{
+			"name" : "VelocityZ",
+			"output" : {
+				"address" : "/avatar/parameters/VelocityZ",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "VelocityY",
+			"output" : {
+				"address" : "/avatar/parameters/VelocityY",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "VelocityX",
+			"output" : {
+				"address" : "/avatar/parameters/VelocityX",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "InStation",
+			"output" : {
+				"address" : "/avatar/parameters/InStation",
+				"type" : "Bool"
+			}
+		},
+		{
+			"name" : "Seated",
+			"output" : {
+				"address" : "/avatar/parameters/Seated",
+				"type" : "Bool"
+			}
+		},
+		{
+			"name" : "AFK",
+			"output" : {
+				"address" : "/avatar/parameters/AFK",
+				"type" : "Bool"
+			}
+		},
+		{
+			"name" : "Upright",
+			"output" : {
+				"address" : "/avatar/parameters/Upright",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "AngularY",
+			"output" : {
+				"address" : "/avatar/parameters/AngularY",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "Grounded",
+			"output" : {
+				"address" : "/avatar/parameters/Grounded",
+				"type" : "Bool"
+			}
+		},
+		{
+			"name" : "MuteSelf",
+			"output" : {
+				"address" : "/avatar/parameters/MuteSelf",
+				"type" : "Bool"
+			}
+		},
+		{
+			"name" : "VRMode",
+			"output" : {
+				"address" : "/avatar/parameters/VRMode",
+				"type" : "Int"
+			}
+		},
+		{
+			"name" : "TrackingType",
+			"output" : {
+				"address" : "/avatar/parameters/TrackingType",
+				"type" : "Int"
+			}
+		},
+		{
+			"name" : "GestureRightWeight",
+			"output" : {
+				"address" : "/avatar/parameters/GestureRightWeight",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "GestureRight",
+			"output" : {
+				"address" : "/avatar/parameters/GestureRight",
+				"type" : "Int"
+			}
+		},
+		{
+			"name" : "GestureLeftWeight",
+			"output" : {
+				"address" : "/avatar/parameters/GestureLeftWeight",
+				"type" : "Float"
+			}
+		},
+		{
+			"name" : "GestureLeft",
+			"output" : {
+				"address" : "/avatar/parameters/GestureLeft",
+				"type" : "Int"
+			}
+		},
+		{
+			"name" : "Viseme",
+			"output" : {
+				"address" : "/avatar/parameters/Viseme",
+				"type" : "Int"
+			}
+		}
+	]
+}
