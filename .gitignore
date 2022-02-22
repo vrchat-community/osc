@@ -1,0 +1,13 @@
+# Rider Files
+.idea/
+
+# CI Local Build Artifacts
+ci/build/bin/
+ci/build/obj/
+ci/_temp_Readme/
+ci/.nuke/temp/
+ci/build/.editorconfig
+
+ci/build/Directory.Build.targets
+
+ci/build/Directory.Build.props
