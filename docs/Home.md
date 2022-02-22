@@ -48,4 +48,4 @@ Check out the [Debugging](Debugging) page to see some incoming values whether or
 # An Important Aside
 Since interacting with VRChat's OSC APIs requires downloading programs from the internet, **exercise caution!** Ensure you are downloading a well-known, trustworthy application. Ask others who are using OSC to see what they're using.
 
-If you have the expertise, consider writing your own implementations for your setup.
+If you have the expertise, consider writing your own implementations for your setup!
