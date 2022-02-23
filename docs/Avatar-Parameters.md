@@ -10,7 +10,8 @@ gh-wiki-slug: "Avatar-Parameters"
 This API lets you drive parameters on your Avatar, and send parameters out to another OSC application.
 
 # Avatar Changes
-When a new Avatar is loaded by the local player with OSC enabled, a message will be sent to `/avatar/change` with the ID of the avatar. If an OSC config is generated or loaded, the absolute path to that config on the user's local drive will be sent to `/avatar/config`.
+When a new Avatar is loaded by the local player with OSC enabled, a message will be sent to `/avatar/change` with the ID of the avatar. 
+~~If an OSC config is generated or loaded, the absolute path to that config on the user's local drive will be sent to `/avatar/config`.~~ < config path sending will be removed in the next release in favor of just using the avatar id. 
 **Please note** that the config file system is a stop-gap to allow for some customization until we can integrate a proper in-client UI for OSC, and may be removed at some point.
 
 # Avatar Parameters & Config Files
