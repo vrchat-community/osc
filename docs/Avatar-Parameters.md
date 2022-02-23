@@ -16,9 +16,9 @@ When a new Avatar is loaded by the local player with OSC enabled, a message will
 # Avatar Parameters & Config Files
 The general idea is that incoming values at the address `/avatar/parameters/name` will set the value of a matching parameter's name. So `/avatar/parameters/VRCEmote` with an Integer value will set the default VRCEmote parameter if you have it, and your avatar will start waving, dancing, etc. Here's a very simple TouchOSC doc that does exactly that: [vrc-emote.tosc](https://github.com/vrchat-community/osc/raw/main/files/touch-osc/vrc-emote.tosc )
 
-To enable you to do more with your Avatar Parameters, we auto-generate config files that can be edited for customization.
+To enable you to do more with your Avatar Parameters, we auto-generate config files that can be edited for customization. Note that configs are not saved to disk using Build & Test - so you can use OSC but you won't see the config until you publish.
 
-When you load into an Avatar, your local storage is checked for an OSC config with that id (in `~\AppData\LocalLow\VRChat\VRChat\OSC\{userId}\Avatars\{avatarName}_{avatarId}.json`).
+When you load into a Published Avatar, your local storage is checked for an OSC config with that id (in `~\AppData\LocalLow\VRChat\VRChat\OSC\{userId}\Avatars\{avatarName}_{avatarId}.json`).
 Here's what a real full path looks like:
 ```
 C:\Users\Momo\AppData\LocalLow\VRChat\VRChat\OSC\usr_9381c776-ce11-4def-9331-6ffeacce027e\Avatars\PurpleMomo_avtr_9d58037b-23c7-4c9c-adbd-b1338178cd81.json
