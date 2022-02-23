@@ -88,6 +88,6 @@ This TouchOSC demo has a control for Vertical & Horizontal Movement, and a butto
 
 `/input/QuickMenuToggleRight` Toggle QuickMenu On/Off. Will toggle upon receiving '1' if it's currently '0'.
 
-`/input/Voice` : Mute - 1 is muted, 0 is unmuted.
+`/input/Voice` : Toggle Voice - the action will depend on whether "Toggle Voice" is turned on in your Settings. If so, then changing from 0 to 1 will toggle the state of mute. If "Toggle Voice" is turned off, then it functions like Push-To-Mute - 1 is muted, 0 is unmuted.
 
 </details>
