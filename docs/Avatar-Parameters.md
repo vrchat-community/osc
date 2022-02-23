@@ -9,9 +9,12 @@ gh-wiki-slug: "Avatar-Parameters"
 # Overview
 This API lets you drive parameters on your Avatar, and send parameters out to another OSC application.
 
-The general idea is that incoming values at the address `/avatar/parameters/name` will set the value of a matching parameter's name. So `/avatar/parameters/VRCEmote` with an Integer value will set the default VRCEmote parameter if you have it, and your avatar will start waving, dancing, etc. Here's a very simple TouchOSC doc that does exactly that: [vrc-emote.tosc](https://github.com/vrchat-community/osc/raw/main/files/touch-osc/vrc-emote.tosc )
+# Avatar Changes
+When a new Avatar is loaded by the local player with OSC enabled, a message will be sent to `/avatar/change` with the ID of the avatar. If an OSC config is generated or loaded, the absolute path to that config on the user's local drive will be sent to `/avatar/config`.
+**Please note** that the config file system is a stop-gap to allow for some customization until we can integrate a proper in-client UI for OSC, and may be removed at some point.
 
-# Config Files
+# Avatar Parameters & Config Files
+The general idea is that incoming values at the address `/avatar/parameters/name` will set the value of a matching parameter's name. So `/avatar/parameters/VRCEmote` with an Integer value will set the default VRCEmote parameter if you have it, and your avatar will start waving, dancing, etc. Here's a very simple TouchOSC doc that does exactly that: [vrc-emote.tosc](https://github.com/vrchat-community/osc/raw/main/files/touch-osc/vrc-emote.tosc )
 
 To enable you to do more with your Avatar Parameters, we auto-generate config files that can be edited for customization.
 
