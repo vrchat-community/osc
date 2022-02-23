@@ -2,6 +2,8 @@ name: Update Readme Docs
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'docs/**'
   workflow_dispatch:
