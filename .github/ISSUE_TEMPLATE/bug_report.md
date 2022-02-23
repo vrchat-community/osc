@@ -25,7 +25,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Info (please complete the following information):**
  - Type: [e.g. Desktop, Laptop, Quest]
- - VRChat version [e.g. 2022.1.1]
+ - VRChat version and build [e.g. 2022.1.1-tVpP3rR0olZ]
 
 **Additional context**
 Add any other context about the problem here.
