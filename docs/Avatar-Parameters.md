@@ -17,10 +17,10 @@ The general idea is that incoming values at the address `/avatar/parameters/name
 
 To enable you to do more with your Avatar Parameters, we auto-generate config files that can be edited for customization. Note that configs are not saved to disk using Build & Test - so you can use OSC but you won't see the config until you publish.
 
-When you load into a Published Avatar, your local storage is checked for an OSC config with that id (in `~\AppData\LocalLow\VRChat\VRChat\OSC\{userId}\Avatars\{avatarName}_{avatarId}.json`).
+When you load into a Published Avatar, your local storage is checked for an OSC config with that id (in `~\AppData\LocalLow\VRChat\VRChat\OSC\{userId}\Avatars\{avatarId}.json`).
 Here's what a real full path looks like:
 ```
-C:\Users\Momo\AppData\LocalLow\VRChat\VRChat\OSC\usr_9381c776-ce11-4def-9331-6ffeacce027e\Avatars\PurpleMomo_avtr_9d58037b-23c7-4c9c-adbd-b1338178cd81.json
+C:\Users\Momo\AppData\LocalLow\VRChat\VRChat\OSC\usr_9381c776-ce11-4def-9331-6ffeacce027e\Avatars\avtr_9d58037b-23c7-4c9c-adbd-b1338178cd81.json
 ```
 
 If found, the given input addresses will have their messages drive Avatar parameters as they come in, and the output addresses will have send messages with parameter values as they change.
