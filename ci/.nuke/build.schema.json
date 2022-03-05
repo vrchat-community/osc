@@ -6,6 +6,14 @@
     "build": {
       "type": "object",
       "properties": {
+        "_notionDB": {
+          "type": "string",
+          "description": "Database from which to read OSC Resources"
+        },
+        "_notionSecret": {
+          "type": "string",
+          "description": "Secret for Integration"
+        },
         "_readmeApiKey": {
           "type": "string",
           "description": "Get it from https://dash.readme.com/project/vrchat/{version}/api-key"
@@ -76,8 +84,10 @@
             "type": "string",
             "enum": [
               "GitHubWikiToReadmeDotCom",
+              "LoadSecrets",
               "ProcessFilesForWiki",
-              "PushReadmeUpdates"
+              "PushReadmeUpdates",
+              "UpdateResourcesFromNotion"
             ]
           }
         },
@@ -88,8 +98,10 @@
             "type": "string",
             "enum": [
               "GitHubWikiToReadmeDotCom",
+              "LoadSecrets",
               "ProcessFilesForWiki",
-              "PushReadmeUpdates"
+              "PushReadmeUpdates",
+              "UpdateResourcesFromNotion"
             ]
           }
         },
