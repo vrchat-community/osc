@@ -31,3 +31,5 @@ jobs:
           path: "ci/_temp_GHWiki"
         env:
           GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+          NotionDB: ${{ secrets.NOTION_DB }}
+          NotionSecret: ${{ secrets.NOTION_SECRET }}

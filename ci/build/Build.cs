@@ -30,9 +30,9 @@ class Build : NukeBuild
     private AbsolutePath _githubTempDir = RootDirectory / "_temp_GHWiki";
 
     [Parameter("Database from which to read OSC Resources")]
-    private string _notionDB;
+    private string NotionDB;
     [Parameter("Secret for Integration")]
-    private string _notionSecret;
+    private string NotionSecret;
     
     static JObject _localSecrets;
     static JObject LocalSecrets {
@@ -170,8 +170,8 @@ class Build : NukeBuild
         {
             if (IsLocalBuild)
             {
-                _notionSecret = LocalSecrets["NOTION_SECRET"]?.ToString();
-                _notionDB = LocalSecrets["NOTION_DB"]?.ToString();
+                NotionSecret = LocalSecrets["NOTION_SECRET"]?.ToString();
+                NotionDB = LocalSecrets["NOTION_DB"]?.ToString();
             }
         });
 
@@ -181,13 +181,13 @@ class Build : NukeBuild
         {
             var client = NotionClientFactory.Create(new ClientOptions
             {
-                AuthToken = _notionSecret
+                AuthToken = NotionSecret
             });
             
             var selectFilter = new SelectFilter("Status", equal: "Approved");
             var filter = new CompoundFilter(and: new List<Filter>(){selectFilter});
             var queryParams = new DatabasesQueryParameters { Filter = filter};
-            var pages = await client.Databases.QueryAsync(_notionDB, queryParams);
+            var pages = await client.Databases.QueryAsync(NotionDB, queryParams);
             
             // Turn database into SortedDictionary
             var resources = new SortedDictionary<string, List<string>>();

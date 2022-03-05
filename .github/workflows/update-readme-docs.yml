@@ -25,3 +25,6 @@ jobs:
         run: cd ci && ./build.cmd PushReadmeUpdates
         env:
           ReadmeAPIKey: ${{ secrets.READMEAPIKEY }}
+          GithubToken: ${{ secrets.GH_PAT }}
+          NotionDB: ${{ secrets.NOTION_DB }}
+          NotionSecret: ${{ secrets.NOTION_SECRET }}
