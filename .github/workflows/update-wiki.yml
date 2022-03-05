@@ -24,6 +24,9 @@ jobs:
           
       - name: Build Wiki Docs
         run: cd ci && ./build.cmd ProcessFilesForWiki
+        env:
+          NotionDB: ${{ secrets.NOTION_DB }}
+          NotionSecret: ${{ secrets.NOTION_SECRET }}
           
       - name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
@@ -31,5 +34,3 @@ jobs:
           path: "ci/_temp_GHWiki"
         env:
           GH_PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
-          NotionDB: ${{ secrets.NOTION_DB }}
-          NotionSecret: ${{ secrets.NOTION_SECRET }}
