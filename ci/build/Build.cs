@@ -95,6 +95,7 @@ class Build : NukeBuild
     /// Just remove frontmatter for now, since we specifically write for GH Wiki syntax
     /// </summary>
     Target ProcessFilesForWiki => _ => _
+        .DependsOn(UpdateResourcesFromNotion)
         .Executes(() =>
         {
             FileSystemTasks.EnsureExistingDirectory(_githubTempDir);
@@ -121,7 +122,6 @@ class Build : NukeBuild
     /// Use frontmatter to change page slugs
     /// </summary>
     Target GitHubWikiToReadmeDotCom => _ => _
-        .DependsOn(UpdateResourcesFromNotion)
         .Executes(() =>
         {
             FileSystemTasks.EnsureExistingDirectory(_readmeDocsDir);

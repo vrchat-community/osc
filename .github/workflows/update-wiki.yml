@@ -22,7 +22,7 @@ jobs:
             ~/.nuget/packages
           key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
           
-      - name: Build  Wiki Docs
+      - name: Build Wiki Docs
         run: cd ci && ./build.cmd ProcessFilesForWiki
           
       - name: Upload Documentation to Wiki
