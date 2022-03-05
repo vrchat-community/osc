@@ -11,3 +11,5 @@ ci/build/.editorconfig
 ci/build/Directory.Build.targets
 
 ci/build/Directory.Build.props
+
+ci/build/secrets.json
