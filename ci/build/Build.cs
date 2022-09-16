@@ -231,7 +231,7 @@ class Build : NukeBuild
                 var languageString = string.Join(",",languages);
 
                 var publicCategoryValue = page.Properties["Public Category"] as SelectPropertyValue;
-                if (publicCategoryValue == null)
+                if (publicCategoryValue.Select == null)
                 {
                     Console.WriteLine($"Couldn't read Public Category of {name}");
                     continue;

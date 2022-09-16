@@ -6,17 +6,13 @@
     "build": {
       "type": "object",
       "properties": {
-        "_notionDB": {
-          "type": "string",
-          "description": "Database from which to read OSC Resources"
-        },
-        "_notionSecret": {
-          "type": "string",
-          "description": "Secret for Integration"
-        },
         "_readmeApiKey": {
           "type": "string",
           "description": "Get it from https://dash.readme.com/project/vrchat/{version}/api-key"
+        },
+        "_readmeDocsVersion": {
+          "type": "string",
+          "description": "Target Readme Version, like `v2022.1.1`"
         },
         "Configuration": {
           "type": "string",
@@ -57,6 +53,14 @@
         "NoLogo": {
           "type": "boolean",
           "description": "Disables displaying the NUKE logo"
+        },
+        "NotionDB": {
+          "type": "string",
+          "description": "Database from which to read OSC Resources"
+        },
+        "NotionSecret": {
+          "type": "string",
+          "description": "Secret for Integration"
         },
         "Partition": {
           "type": "string",
