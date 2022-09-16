@@ -87,9 +87,18 @@ class Build : NukeBuild
         Serilog.Log.Information($"Sending {doc.slug}");
         using (var response = await client.SendAsync(request))
         {
-            response.EnsureSuccessStatusCode();
-            var body = await response.Content.ReadAsStringAsync();
-            Console.WriteLine($"Posted {doc.slug}");
+            try
+            {
+                response.EnsureSuccessStatusCode();
+                var body = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Posted {doc.slug}");
+            }
+            catch (Exception e)
+            {
+                var body = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Couldn't update {doc.title}: {body}");
+                throw;
+            }
         }
     }
 
