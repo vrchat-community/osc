@@ -23,7 +23,8 @@ class Build : NukeBuild
     
     [Parameter("Get it from https://dash.readme.com/project/vrchat/{version}/api-key")]
     private string _readmeApiKey = "";
-    private string _readmeDocsVersion = "v2022.1.1";
+    [Parameter("Target Readme Version, like `v2022.1.1`")]
+    private string _readmeDocsVersion = "v2022.2.2";
     
     private AbsolutePath _markdownSourceDir = RootDirectory.Parent / "docs";
     private AbsolutePath _readmeDocsDir = RootDirectory / "_temp_Readme";
@@ -57,6 +58,7 @@ class Build : NukeBuild
         { "Debugging", "osc-debugging" },
         { "DIY", "osc-diy" },
         { "Home", "osc-overview" }
+        { "Chatbox", "osc-chatbox" }
     };
     
     private async Task SendPageToReadme(string path)

@@ -7,6 +7,12 @@ on:
     paths:
       - 'docs/**'
   workflow_dispatch:
+    inputs:
+      readmeVersion:
+        description: 'Target Readme Version, like `v2022.2.2`'
+        required: true
+        type: string
+        default: 'v2022.2.2'
 
 jobs:
   update-rdme:
