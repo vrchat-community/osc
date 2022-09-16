@@ -57,7 +57,7 @@ class Build : NukeBuild
         { "Avatar-Parameters", "osc-avatar-parameters" },
         { "Debugging", "osc-debugging" },
         { "DIY", "osc-diy" },
-        { "Home", "osc-overview" }
+        { "Home", "osc-overview" },
         { "Chatbox", "osc-chatbox" }
     };
     
