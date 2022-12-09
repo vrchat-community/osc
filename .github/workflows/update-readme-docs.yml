@@ -12,7 +12,7 @@ on:
         description: 'Target Readme Version, like `v2022.2.2`'
         required: true
         type: string
-        default: 'v2022.2.2'
+        default: 'v2022.4.2'
 
 jobs:
   update-rdme:
